@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-box i,
+.search-box button {
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 16px;
+}
+
+.not-found {
+  display: none;
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.not-found img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.weather-box {
+  display: none;
+  margin-top: 20px;
+}
+
+.weather-box img {
+  width: 100px;
+}
+
+.weather-box .temperature {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.weather-box .description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.weather-details .text {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.weather-details .text span {
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+
+.weather-details .text p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.loader {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
